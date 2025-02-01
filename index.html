@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Viking Skin Generator</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- <section id="model_preview" class="primary_section">
+            <h2>NOT FINISHED YET</h2>
+        </section> -->
+
+        <section id="panel_selector" class="primary_section">
+            <section id="skin_input_panel" class="element_section">
+                <div id="skin_input_div">
+                    <h2>Input your base skin</h2>
+                    <input id="skin_input" type="file" accept="image/png">
+
+                </div>
+                <div id="arm_size_selection">
+                    <div class="arm_size_btn btn" id="choose_alex_arm_size">
+                        <p>Alex (3px arm)</p>
+                    </div>
+                    <div class="arm_size_btn btn" id="choose_steve_arm_size">
+                        <p>Steve (4px arm)</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="elements">
+
+                <section class="element_section">
+                    <h2 class="element_section_title">Base Layer</h2>
+                    <div class="skin_element btn alex_arm_size">
+                        <p>Short Tunic</p>
+                        <a href="./parts/short_tunic_alex.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                    <div class="skin_element btn steve_arm_size">
+                        <p>Short Tunic</p>
+                        <a href="./parts/short_tunic_steve.png" class="element_link_storage hidden"></a>
+                    </div>
+
+
+                    <div class="skin_element btn alex_arm_size">
+                        <p>Long Tunic</p>
+                        <a href="./parts/tunic_alex.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                    <div class="skin_element btn steve_arm_size">
+                        <p>href Tunic</p>
+                        <a href="./parts/tunic_steve.png" class="element_link_storage hidden"></a>
+                    </div>
+
+
+                    <div class="skin_element btn alex_arm_size">
+                        <p>Dress</p>
+                        <a href="./parts/dress_alex.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                    <div class="skin_element btn steve_arm_size">
+                        <p>Dress</p>
+                        <a href="./parts/dress_steve.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                </section>
+
+                <section class="element_section">
+                    <h2 class="element_section_title">Body Armour</h2>
+                    <div class="skin_element btn alex_arm_size">
+                        <p>Light Armour</p>
+                        <a href="./parts/light_armour_alex.png" class="element_link_storage hidden"></a>
+                    </div>
+                    
+                    <div class="skin_element btn steve_arm_size">
+                        <p>Light Armour</p>
+                        <a href="./parts/light_armour_steve.png" class="element_link_storage hidden"></a>
+                    </div>
+
+
+                    <div class="skin_element btn alex_arm_size">
+                        <p>Medium Armour</p>
+                        <a href="./parts/medium_armour_alex.png" class="element_link_storage hidden"></a>
+                    </div>
+                    
+                    <div class="skin_element btn steve_arm_size">
+                        <p>Medium Armour</p>
+                        <a href="./parts/medium_armour_steve.png" class="element_link_storage hidden"></a>
+                    </div>
+
+
+                    <div class="skin_element btn alex_arm_size">
+                        <p>Heavy Armour</p>
+                        <a href="./parts/heavy_armour_alex.png" class="element_link_storage hidden"></a>
+                    </div>
+                    
+                    <div class="skin_element btn steve_arm_size">
+                        <p>Heavy Armour</p>
+                        <a href="./parts/heavy_armour_steve.png" class="element_link_storage hidden"></a>
+                    </div>
+                    
+
+                    <div class="skin_element btn">
+                        <p>Belt</p>
+                        <a href="./parts/belt.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                </section>
+
+                <section class="element_section">
+                    <h2 class="element_section_title">Helmets</h2>
+                    <div class="skin_element btn">
+                        <p>Light Helmet</p>
+                        <a href="./parts/light_helmet.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                    <div class="skin_element btn">
+                        <p>Medium Helmet</p>
+                        <a href="./parts/medium_helmet.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                    <div class="skin_element btn">
+                        <p>Strong Helmet</p>
+                        <a href="./parts/heavy_helmet.png" class="element_link_storage hidden"></a>
+                    </div>
+
+                    <div class="skin_element btn">
+                        <p>Heavy Helmet</p>
+                        <a href="./parts/super_heavy_helmet.png" class="element_link_storage hidden"></a>
+                    </div>
+            </section>
+        </section>
+        <section id="files">
+            <div>
+                <h2>Base Skin</h2>
+                <canvas id="base_skin" width="64" height="64" class="skin_file_preview"></canvas>
+
+            </div>
+            <div>
+                <h2>Skin Preview</h2>
+                <canvas id="current_skin" width="64" height="64" class="skin_file_preview"></canvas>
+                
+            </div>
+            <div class="btn" id="download_skin">
+                <p>Download Skin</p>
+
+            </div>
+
+            <canvas id="skin" width="64" height="64" class="hidden"></canvas>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
