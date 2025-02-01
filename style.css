@@ -75,7 +75,8 @@ section {
 }
 
 .primary_section {
-    width: calc(50% - 20px);
+    /* width: calc(50% - 20px); */
+    width: 80%;
     height: calc(100% - 20px);
 
     background-color: var(--colour-1);
@@ -135,7 +136,10 @@ section {
 #skin_input_div > h2, #skin_input_div > input{
     width: 100%;
     text-align: center;
+}
 
+#skin_input_div > h2{
+    font-size: 16pt;
 }
 
 #arm_size_selection{
